@@ -131,4 +131,4 @@ Submit the **GitHub repo URL** on Canvas.
 - [x] `Dockerfile` committed
 - [x] `screenshots/docker-desktop-container.png` — both containers running
 - [x] `screenshots/mysql-workbench-connected.png` — Workbench connected to MySQL
-- [ ] Repo pushed to GitHub; URL submitted
+- [x] Repo pushed to GitHub: https://github.com/AdnaanMansuri/lab6-docker
