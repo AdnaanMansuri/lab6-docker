@@ -43,12 +43,14 @@ From **this folder** (`lab6`), with Docker Desktop running:
 # Build the image (tag it "lab6-app")
 docker build -t lab6-app .
 
-# Run a container, mapping host port 3000 -> container port 3000
-docker run --name lab6-app -p 3000:3000 -d lab6-app
+# Run a container, mapping host port 3001 -> container port 3000
+# (host 3000 was already in use on this machine, so we map to 3001)
+docker run --name lab6-app -p 3001:3000 -d lab6-app
 ```
 
-Open http://localhost:3000 in a browser — you should see the 🐳 page.
-Check http://localhost:3000/health for JSON showing the container hostname.
+Open http://localhost:3001 in a browser — you should see the 🐳 page.
+Check http://localhost:3001/health for JSON showing the container hostname
+(the container id, proving the response is served from inside the container).
 
 Useful commands:
 
@@ -126,8 +128,7 @@ Submit the **GitHub repo URL** on Canvas.
 
 ## Deliverables checklist
 
-- [ ] `Dockerfile` committed
-- [ ] `screenshots/docker-build.png` — build succeeded
-- [ ] `screenshots/docker-desktop-container.png` — container running
-- [ ] `screenshots/mysql-workbench-connected.png` — Workbench connected to MySQL
+- [x] `Dockerfile` committed
+- [x] `screenshots/docker-desktop-container.png` — both containers running
+- [x] `screenshots/mysql-workbench-connected.png` — Workbench connected to MySQL
 - [ ] Repo pushed to GitHub; URL submitted
