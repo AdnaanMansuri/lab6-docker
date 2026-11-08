@@ -1,0 +1,14 @@
+{
+  "name": "lab6-docker-app",
+  "version": "1.0.0",
+  "description": "A small Node.js/Express web app containerized with Docker for Lab 6.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "mansuri.moham@northeastern.edu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.19.2"
+  }
+}
